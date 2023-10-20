@@ -14,7 +14,11 @@ def format_response(weathe):
         city=weathe['name']
         condition=weathe['weather'][0]["description"]
         temp=weathe["main"]["temp"]
-        sting="City:%s\nCondition:%s\nTemperature:%s"%(city,condition,temp)
+        feels=weathe["main"]["feels_like"]
+        humi=weathe["main"]["humidity"]
+        sting="City:%s\nCondition:%s\nTemperature:%s\nFeels like:%s\nHumidity:%s"%(city,condition,temp,feels,humi)
+    except:
+"%(city,condition,temp,)
     except:
         sting="an error occured"
     return sting
