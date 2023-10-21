@@ -54,7 +54,7 @@ bg_lbl=tk.Label(root,image=img_photo)
 bg_lbl.place(x=0,y=0,width=600,height=500)
 
 
-head=tk.Label(bg_lbl,text="Find the weather for any city you want!",fg="yellow",bg="purple",font=('times new roman',25,"bold","underline"))
+head=tk.Label(bg_lbl,text="Find the weather for any city you want!",fg="green",bg="silver",font=('times new roman',25,"bold","underline"))
 head.place(x=80,y=18)
 
 
