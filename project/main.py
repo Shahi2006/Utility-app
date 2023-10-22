@@ -4,7 +4,7 @@ import requests
 from tkinter import ttk
 root=tk.Tk()
 
-root.title("Weather App")
+root.title("WeatherSphere")
 root.geometry("600x500")
 
 
