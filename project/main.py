@@ -29,7 +29,7 @@ def format_response(weathe):
 
 def open_image(icon):
     size=int(frame_two.winfo_height()*0.5)
-    img=ImageTk.PhotoImage(Image.open("./img/"+icon+".png").resize((size,size)))
+    img=ImageTk.PhotoImage(Image.open("img/"+icon+".png").resize((size,size)))
     weather_icon.delete("all")
     weather_icon.create_image(0,0,anchor="nw",image=img)
     weather_icon.image=img
@@ -47,7 +47,7 @@ def getweather(city):
     ico=weathe['weather'][0]['icon']
     open_image(ico)
     
-img=Image.open('./bg.webp')
+img=Image.open('bg.webp')
 img_photo=ImageTk.PhotoImage(img)
 
 bg_lbl=tk.Label(root,image=img_photo)
